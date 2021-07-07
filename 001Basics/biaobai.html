@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给你的诗</title>
+    <style type="text/css">
+       body{
+           background-image: url(./images/小王子.jpg);
+           background-size: 100% 100%;
+           height: 100%;
+       }
+       html{
+           height: 100%;
+       }
+       @keyframes myfirst {
+           0%{opacity: 0;}
+           25%{opacity: 100;}
+           50%{opacity: 0;}
+           100%{opacity:100;}
+       }
+       @keyframes mysecond{
+           0%{opacity: 0;}
+           50%{opacity: 0;}
+           75%{opacity: 100;}
+           100%{opacity:100;}
+       }
+       p{
+           font-size: 100px;
+           position:absolute;
+           width: 100%;
+           text-align: center;
+       }
+       #ch{
+           animation: myfirst 2s infinite;
+       }
+       #yi{
+           animation: mysecond 2s infinite;
+       }
+    </style>
+</head>
+<body>
+<audio src="wav/bgm.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio>
+<h1>静夜思</h1>
+<p id ="ch">窗前明月光<p>
+<p id = "yi">疑是地上霜<p>
+<p>举头望明月<p>
+<p>低头思故乡<p>
+</body>
+</html>
