@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      #container div{
+        width: 350px;
+        height:350px;
+        position: absolute;
+      }
+
+      #container{
+        width: 350px;
+        height:350px;
+        background-image:url('images/dressup/body.png');
+        position: absolute;
+        top:60px;
+      }
+      #menu div{
+        float: left;
+        border: 1px solid black;
+        width: 50px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+<div id="menu">
+  <div id="suit" onclick="suit()">西装</div>
+  <div id="upper2"onclick="suit2()">海魂衫</div>
+  <div id="upper3"onclick="suit3()">吊带</div>
+  <div id="upper4"onclick="suit4()">西裤</div>
+  <div id="upper5"onclick="suit5()">短裤</div>
+</div>
+<div id="container">
+  <div id = "upper"></div>
+  <div id = "lower"></div>
+</div>
+
+</body>
+<script>
+  function suit()
+  {
+    document.getElementById("upper").style.backgroundImage="url('images/dressup/upper1.png')";
+  }
+  function suit2()
+  {
+    document.getElementById("upper").style.backgroundImage="url('images/dressup/upper2.png')";
+  }
+  function suit3()
+  {
+    document.getElementById("upper").style.backgroundImage="url('images/dressup/upper3.png')";
+  }
+  function suit4()
+  {
+    document.getElementById("lower").style.backgroundImage="url('images/dressup/lower1.png')";
+  }
+  function suit5()
+  {
+    document.getElementById("lower").style.backgroundImage="url('images/dressup/lower2.png')";
+  }
+</script>
+</html>
